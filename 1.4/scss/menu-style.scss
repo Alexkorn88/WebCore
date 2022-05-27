@@ -1,0 +1,291 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes-Regular.eot');
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+        url('../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes-Regular.woff') format('woff'),
+        url('../fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+        url('../fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes-Bold.woff') format('woff'),
+        url('../fonts/TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes-Medium.eot');
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+        url('../fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes-Medium.woff') format('woff'),
+        url('../fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+
+}
+
+.container {
+    width: 320px;
+    position: relative;
+    padding-right: 24px;
+    padding-left: 24px;
+    background-color: #fff;
+    // box-shadow:  16px 0 52px 0 rgba(14, 24, 80, 0.2);
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+}
+
+.header {
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        padding-top: 19px;
+    }
+
+    &__nav-right {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+}
+
+.btn {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: none;
+    display: inline-block;
+    padding: 0;
+
+    &:hover,
+    :focus {
+
+        opacity: 0.5;
+        transition-property: opacity;
+        transition-duration: 0.3s;
+        transition-delay: 0.1s;
+    }
+}
+
+.logo__btn {
+    width: 96px;
+    height: 51px;
+    background-color: #fff;
+    border: none;
+    padding: 0;
+    align-self: start;
+    margin-left: 17px;
+
+    &:hover,
+    :focus {
+        opacity: 0.5;
+        transition-property: opacity;
+        transition-duration: 0.3s;
+        transition-delay: 0.1s;
+    }
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+
+    &__nav {
+        margin-top: 50px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // align-items: center;
+        list-style: none;
+        position: relative;
+    }
+
+    &__item {
+        padding-bottom: 32px;
+        list-style: none;
+        position: relative;
+    }
+
+    &__item:hover, :focus {
+        opacity: 0.7;
+        transition-property: opacity;
+        transition-duration: 0.4s;
+        transition-delay: 0.2s;
+    }
+
+    &__item::before {
+        content: "";
+        display: block;
+        width: 4px;
+
+        margin-top: -5px;
+        margin-left: -24px;
+        border-radius: 0 25px 25px 0;
+        background-color: #41F6D7;
+        position: absolute;
+        height: 0;
+    }
+
+    &__item:hover::before {
+        height: 32px;
+        transition-property: height;
+        transition-duration: 0.2s;
+        transition-delay: 0.1s;
+
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        list-style: none;
+        padding-top: 19px;
+    }
+
+    &__btn {
+        margin-right: 16px;
+    }
+
+    &__contact {
+        margin-top: 206px;
+    }
+
+    &__contact-mail {
+        margin-top: 16px;
+    }
+
+    &__contact-phone {
+        margin-top: 12px;
+    }
+}
+
+// .container .item-btn__link{
+//     position: relative;
+// }
+// .container .item-btn__link::before {
+//     content: "";
+//     display: block;
+//     width: 4px;
+//     height: 32px;
+//     border-radius: 0 25px 25px 0;
+//     background-color: #41F6D7;
+//     position: absolute;
+// }
+.mail {
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    text-decoration: none;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+    color: #1B1C21;
+    &:hover, :focus {
+        opacity: 0.7;
+        transition-property: opacity;
+        transition-duration: 0.4s;
+        transition-delay: 0.2s;
+    }                                               
+}
+
+.phone {
+    font-family: 'TT Lakes';
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+    text-decoration: none;
+    letter-spacing: -0.6px;
+    font-weight: bold;
+    color: #1B1C21;
+    &:hover, :focus {
+        opacity: 0.7;
+        transition-property: opacity;
+        transition-duration: 0.4s;
+        transition-delay: 0.2s;
+    } 
+}
+
+.item-btn {
+    height: 24px;
+    background-color: #fff;
+    border: none;
+    display: inline-block;
+
+    &__link {
+        text-decoration: none;
+        font-family: 'TT Lakes';
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+
+        letter-spacing: -0.2px;
+        font-weight: 500;
+        color: #1B1C21;
+    }
+}
+
+.language {
+    margin-top: 40px;
+
+    &__nav {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        list-style: none;
+        padding-top: 19px;
+    }
+
+}
+
+.lang {
+    margin-right: 7px;
+    margin-bottom: 32px;
+
+    &__link {
+        text-decoration: none;
+        font-family: 'TT Lakes';
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+        font-weight: 500;
+        letter-spacing: -0.2px;
+
+        color: #1B1C21;
+
+    }
+    &:hover, :focus {
+        opacity: 0.7;
+        transition-property: opacity;
+        transition-duration: 0.4s;
+        transition-delay: 0.2s;
+    } 
+}
