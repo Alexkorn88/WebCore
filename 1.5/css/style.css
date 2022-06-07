@@ -66,6 +66,7 @@ html {
 }
 
 .swiper-slide {
+  max-width: 240px;
   max-height: 72px;
 }
 
@@ -92,7 +93,6 @@ html {
   border-radius: 6px;
   background-color: #fff;
   border: 1px solid #EAEAEA;
-  margin-right: 16px;
 }
 .btn__link {
   text-decoration: none;

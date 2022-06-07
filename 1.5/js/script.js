@@ -11,8 +11,8 @@ function mobileSlider() {
                 clickable: true,
             },
 
-            spaceBetween: 0,
-            slidesPerView: 1.1
+            spaceBetween: 16,
+            // slidesPerView: 1
         });
 
         slider.dataset.mobile = 'true';
