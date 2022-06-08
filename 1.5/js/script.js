@@ -17,11 +17,11 @@ function mobileSlider() {
             // slidesPerView: 1
         });
 
-        slider.dataset.mobile = 'true';
+        // slider.dataset.mobile = 'true';
     }
 
     if (window.innerWidth > 760) {
-        slider.dataset.mobile = 'false';
+        // slider.dataset.mobile = 'false';
         
         if (slider.classList.contains('swiper-initialized')) {
             mobSwiper.destroy();
