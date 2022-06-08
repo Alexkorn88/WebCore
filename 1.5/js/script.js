@@ -4,8 +4,10 @@ const slider = document.querySelector('.swiper');
 let mobSwiper;
 
 function mobileSlider() {
-    if (window.innerWidth <= 760 && slider.dataset.mobile == 'false') {
+    if (window.innerWidth <= 760) {
         mobSwiper = new Swiper('.swiper', {
+
+            slidesPerView: 'auto',
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
